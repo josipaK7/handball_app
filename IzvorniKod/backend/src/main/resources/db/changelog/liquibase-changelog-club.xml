@@ -1,0 +1,33 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createSequence sequenceName="club_id_seq" incrementBy="1" cycle="false" startValue="1"/>
+
+        <createTable tableName="club">
+            <column name="club_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" unique="true"/>
+            </column>
+            <column name="name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(2048)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="image" type="BYTEA">
+                <constraints nullable="true"/>
+            </column>
+            <column name="place" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="establishment_date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

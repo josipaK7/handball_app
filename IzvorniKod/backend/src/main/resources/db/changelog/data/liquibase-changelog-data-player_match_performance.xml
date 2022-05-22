@@ -1,0 +1,553 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">100</column>
+            <column name="match_id">1</column>
+            <column name="goals">6</column>
+            <column name="assists">0</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">3</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">200</column>
+            <column name="match_id">1</column>
+            <column name="goals">4</column>
+            <column name="assists">4</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">3</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">300</column>
+            <column name="match_id">1</column>
+            <column name="goals">4</column>
+            <column name="assists">2</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">1</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">400</column>
+            <column name="match_id">1</column>
+            <column name="goals">5</column>
+            <column name="assists">0</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">1</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">500</column>
+            <column name="match_id">1</column>
+            <column name="goals">6</column>
+            <column name="assists">2</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">3</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">600</column>
+            <column name="match_id">1</column>
+            <column name="goals">6</column>
+            <column name="assists">2</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">6</column>
+            <column name="stolen">3</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">700</column>
+            <column name="match_id">1</column>
+            <column name="goals">8</column>
+            <column name="assists">2</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">3</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">800</column>
+            <column name="match_id">1</column>
+            <column name="goals">8</column>
+            <column name="assists">5</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">4</column>
+            <column name="club_id">200</column>
+        </insert>
+
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">100</column>
+            <column name="match_id">2</column>
+            <column name="goals">2</column>
+            <column name="assists">0</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">3</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">200</column>
+            <column name="match_id">2</column>
+            <column name="goals">5</column>
+            <column name="assists">4</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">3</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">300</column>
+            <column name="match_id">2</column>
+            <column name="goals">6</column>
+            <column name="assists">3</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">2</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">400</column>
+            <column name="match_id">2</column>
+            <column name="goals">1</column>
+            <column name="assists">0</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">2</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">500</column>
+            <column name="match_id">2</column>
+            <column name="goals">3</column>
+            <column name="assists">3</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">1</column>
+            <column name="club_id">100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">600</column>
+            <column name="match_id">2</column>
+            <column name="goals">5</column>
+            <column name="assists">3</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">4</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">700</column>
+            <column name="match_id">2</column>
+            <column name="goals">7</column>
+            <column name="assists">4</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">2</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">800</column>
+            <column name="match_id">2</column>
+            <column name="goals">10</column>
+            <column name="assists">5</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">6</column>
+            <column name="club_id">200</column>
+        </insert>
+
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">600</column>
+            <column name="match_id">3</column>
+            <column name="goals">7</column>
+            <column name="assists">2</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">4</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">700</column>
+            <column name="match_id">3</column>
+            <column name="goals">7</column>
+            <column name="assists">4</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">3</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">800</column>
+            <column name="match_id">3</column>
+            <column name="goals">8</column>
+            <column name="assists">2</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">2</column>
+            <column name="club_id">200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2300</column>
+            <column name="match_id">3</column>
+            <column name="goals">5</column>
+            <column name="assists">3</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1000</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2400</column>
+            <column name="match_id">3</column>
+            <column name="goals">3</column>
+            <column name="assists">1</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">1</column>
+            <column name="club_id">1000</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2500</column>
+            <column name="match_id">3</column>
+            <column name="goals">6</column>
+            <column name="assists">4</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">1</column>
+            <column name="club_id">1000</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2600</column>
+            <column name="match_id">3</column>
+            <column name="goals">1</column>
+            <column name="assists">0</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">13</column>
+            <column name="turnovers">0</column>
+            <column name="stolen">0</column>
+            <column name="club_id">1000</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">1700</column>
+            <column name="match_id">7</column>
+            <column name="goals">0</column>
+            <column name="assists">0</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">11</column>
+            <column name="turnovers">0</column>
+            <column name="stolen">0</column>
+            <column name="club_id">1100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">1800</column>
+            <column name="match_id">7</column>
+            <column name="goals">4</column>
+            <column name="assists">2</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">1900</column>
+            <column name="match_id">7</column>
+            <column name="goals">7</column>
+            <column name="assists">1</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">4</column>
+            <column name="club_id">1100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2000</column>
+            <column name="match_id">7</column>
+            <column name="goals">10</column>
+            <column name="assists">3</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1100</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2100</column>
+            <column name="match_id">7</column>
+            <column name="goals">8</column>
+            <column name="assists">5</column>
+            <column name="suspensions">3</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">5</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1400</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2200</column>
+            <column name="match_id">7</column>
+            <column name="goals">12</column>
+            <column name="assists">2</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">6</column>
+            <column name="club_id">1400</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2700</column>
+            <column name="match_id">8</column>
+            <column name="goals">4</column>
+            <column name="assists">3</column>
+            <column name="suspensions">3</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">4</column>
+            <column name="club_id">1200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2800</column>
+            <column name="match_id">8</column>
+            <column name="goals">6</column>
+            <column name="assists">1</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">4</column>
+            <column name="club_id">1200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">2900</column>
+            <column name="match_id">8</column>
+            <column name="goals">9</column>
+            <column name="assists">1</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1200</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3000</column>
+            <column name="match_id">8</column>
+            <column name="goals">0</column>
+            <column name="assists">0</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">17</column>
+            <column name="turnovers">0</column>
+            <column name="stolen">0</column>
+            <column name="club_id">1500</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3100</column>
+            <column name="match_id">8</column>
+            <column name="goals">7</column>
+            <column name="assists">2</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">3</column>
+            <column name="club_id">1500</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3200</column>
+            <column name="match_id">8</column>
+            <column name="goals">10</column>
+            <column name="assists">5</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">1</column>
+            <column name="club_id">1500</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3300</column>
+            <column name="match_id">10</column>
+            <column name="goals">0</column>
+            <column name="assists">2</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">14</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">1</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3400</column>
+            <column name="match_id">10</column>
+            <column name="goals">13</column>
+            <column name="assists">3</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">3</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3500</column>
+            <column name="match_id">10</column>
+            <column name="goals">18</column>
+            <column name="assists">6</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">3</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3800</column>
+            <column name="match_id">10</column>
+            <column name="goals">12</column>
+            <column name="assists">0</column>
+            <column name="suspensions">3</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">1</column>
+            <column name="club_id">1300</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3900</column>
+            <column name="match_id">10</column>
+            <column name="goals">14</column>
+            <column name="assists">4</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">2</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1300</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3600</column>
+            <column name="match_id">11</column>
+            <column name="goals">11</column>
+            <column name="assists">7</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">5</column>
+            <column name="club_id">1700</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3700</column>
+            <column name="match_id">11</column>
+            <column name="goals">13</column>
+            <column name="assists">3</column>
+            <column name="suspensions">1</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">3</column>
+            <column name="stolen">5</column>
+            <column name="club_id">1700</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3300</column>
+            <column name="match_id">11</column>
+            <column name="goals">1</column>
+            <column name="assists">1</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">14</column>
+            <column name="turnovers">1</column>
+            <column name="stolen">2</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3400</column>
+            <column name="match_id">11</column>
+            <column name="goals">9</column>
+            <column name="assists">4</column>
+            <column name="suspensions">2</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">3</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+        <insert tableName="player_match_performance">
+            <column name="player_id">3500</column>
+            <column name="match_id">11</column>
+            <column name="goals">14</column>
+            <column name="assists">6</column>
+            <column name="suspensions">0</column>
+            <column name="defenses">0</column>
+            <column name="turnovers">4</column>
+            <column name="stolen">5</column>
+            <column name="club_id">1800</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

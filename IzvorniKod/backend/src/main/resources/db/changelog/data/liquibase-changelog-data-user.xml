@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="user">
+            <column name="id">1</column>
+            <column name="first_name">Josipa</column>
+            <column name="last_name">Kaselj</column>
+            <column name="email">admin@fer.hr</column>
+            <column name="password">$2a$10$e.s/V3Ca845wfHy4DqBZmeRxpg4Pm5MR2owvcs/XCbO13ttDwqPDi</column>
+            <column name="date_of_birth">2000-03-02</column>
+            <column name="place">Virovitica</column>
+            <column name="description">Bok, ja sam Josipa.</column>
+            <column name="role_id">1</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,41 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <include file="changelog/liquibase-changelog-club.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-player.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-competition.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-position.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-coach_role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-coach.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-match.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-referee.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-user.xml" relativeToChangelogFile="true"/>
+
+    <include file="changelog/liquibase-changelog-player_position.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-player_match_performance.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-match_referee.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/liquibase-changelog-club_competition.xml" relativeToChangelogFile="true"/>
+
+
+    <include file="changelog/data/liquibase-changelog-data-role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-user.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-competition.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-club.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-club_competition.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-match.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-referee.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-match_referee.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-player.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-player_match_performance.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-position.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-player_position.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-coach_role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-coach.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-role.xml" relativeToChangelogFile="true"/>
+    <include file="changelog/data/liquibase-changelog-data-user.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

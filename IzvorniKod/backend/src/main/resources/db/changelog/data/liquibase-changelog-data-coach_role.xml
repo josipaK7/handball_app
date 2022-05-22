@@ -1,0 +1,31 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="coach_role">
+            <column name="coach_role_id">1</column>
+            <column name="name">glavni trener</column>
+        </insert>
+
+        <insert tableName="coach_role">
+            <column name="coach_role_id">2</column>
+            <column name="name">pomoćni trener</column>
+        </insert>
+
+        <insert tableName="coach_role">
+            <column name="coach_role_id">3</column>
+            <column name="name">trener golmana/vratara</column>
+        </insert>
+
+        <insert tableName="coach_role">
+            <column name="coach_role_id">4</column>
+            <column name="name">kondicijski trener</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

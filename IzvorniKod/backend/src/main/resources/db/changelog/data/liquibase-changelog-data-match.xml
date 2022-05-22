@@ -1,0 +1,141 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="match">
+            <column name="match_id">1</column>
+            <column name="club_one_id">100</column>
+            <column name="club_two_id">200</column>
+            <column name="competition_id">100</column>
+            <column name="club_one_goals">25</column>
+            <column name="club_two_goals">22</column>
+            <column name="date_played">2020-12-11 18:35:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">2</column>
+            <column name="club_one_id">200</column>
+            <column name="club_two_id">100</column>
+            <column name="competition_id">100</column>
+            <column name="club_one_goals">22</column>
+            <column name="club_two_goals">17</column>
+            <column name="date_played">2021-05-21 19:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">3</column>
+            <column name="club_one_id">200</column>
+            <column name="club_two_id">1000</column>
+            <column name="competition_id">200</column>
+            <column name="club_one_goals">22</column>
+            <column name="club_two_goals">25</column>
+            <column name="date_played">2021-04-11 16:30:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">4</column>
+            <column name="club_one_id">600</column>
+            <column name="club_two_id">900</column>
+            <column name="competition_id">200</column>
+            <column name="club_one_goals">19</column>
+            <column name="club_two_goals">25</column>
+            <column name="date_played">2021-11-10 16:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">5</column>
+            <column name="club_one_id">200</column>
+            <column name="club_two_id">100</column>
+            <column name="competition_id">100</column>
+            <column name="club_one_goals">0</column>
+            <column name="club_two_goals">0</column>
+            <column name="date_played">2021-10-10 17:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">6</column>
+            <column name="club_one_id">400</column>
+            <column name="club_two_id">800</column>
+            <column name="competition_id">100</column>
+            <column name="club_one_goals">0</column>
+            <column name="club_two_goals">0</column>
+            <column name="date_played">2021-10-12 15:30:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">7</column>
+            <column name="club_one_id">1100</column>
+            <column name="club_two_id">1400</column>
+            <column name="competition_id">300</column>
+            <column name="club_one_goals">21</column>
+            <column name="club_two_goals">20</column>
+            <column name="date_played">2021-08-25 17:30:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">8</column>
+            <column name="club_one_id">1200</column>
+            <column name="club_two_id">1500</column>
+            <column name="competition_id">300</column>
+            <column name="club_one_goals">19</column>
+            <column name="club_two_goals">17</column>
+            <column name="date_played">2021-08-13 18:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">9</column>
+            <column name="club_one_id">1500</column>
+            <column name="club_two_id">1600</column>
+            <column name="competition_id">300</column>
+            <column name="club_one_goals">0</column>
+            <column name="club_two_goals">0</column>
+            <column name="date_played">2021-11-29 17:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">10</column>
+            <column name="club_one_id">1800</column>
+            <column name="club_two_id">1300</column>
+            <column name="competition_id">400</column>
+            <column name="club_one_goals">31</column>
+            <column name="club_two_goals">26</column>
+            <column name="date_played">2021-07-15 16:00:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">11</column>
+            <column name="club_one_id">1700</column>
+            <column name="club_two_id">1800</column>
+            <column name="competition_id">400</column>
+            <column name="club_one_goals">24</column>
+            <column name="club_two_goals">24</column>
+            <column name="date_played">2021-07-10 19:15:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">12</column>
+            <column name="club_one_id">1700</column>
+            <column name="club_two_id">1300</column>
+            <column name="competition_id">400</column>
+            <column name="club_one_goals">0</column>
+            <column name="club_two_goals">0</column>
+            <column name="date_played">2021-12-02 18:30:00.0Z</column>
+        </insert>
+
+        <insert tableName="match">
+            <column name="match_id">13</column>
+            <column name="club_one_id">700</column>
+            <column name="club_two_id">500</column>
+            <column name="competition_id">100</column>
+            <column name="club_one_goals">0</column>
+            <column name="club_two_goals">0</column>
+            <column name="date_played">2021-12-10 17:00:00.0Z</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,53 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createSequence sequenceName="coach_id_seq" incrementBy="1" cycle="false" startValue="100"/>
+
+        <createTable tableName="coach">
+            <column name="coach_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="club_id" type="BIGINT">
+                <constraints />
+            </column>
+            <column name="coach_role_id" type="BIGINT">
+                <constraints />
+            </column>
+            <column name="first_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="image" type="BYTEA">
+                <constraints nullable="true"/>
+            </column>
+            <column name="origin_country" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="coach"
+                                 baseColumnNames="coach_role_id"
+                                 constraintName="coach_role_id_coach_fkey"
+                                 referencedTableName="coach_role"
+                                 referencedColumnNames="coach_role_id"
+                                 onDelete="NO ACTION"
+                                 onUpdate="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="coach"
+                                 baseColumnNames="club_id"
+                                 constraintName="club_id_coach_fkey"
+                                 referencedTableName="club"
+                                 referencedColumnNames="club_id"
+                                 onDelete="SET NULL"
+                                 onUpdate="CASCADE"/>
+    </changeSet>
+
+
+
+</databaseChangeLog>

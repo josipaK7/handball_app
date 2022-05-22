@@ -1,0 +1,141 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="match_referee">
+            <column name="match_id">1</column>
+            <column name="referee_id">1</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">1</column>
+            <column name="referee_id">2</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">2</column>
+            <column name="referee_id">3</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">2</column>
+            <column name="referee_id">6</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">3</column>
+            <column name="referee_id">4</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">3</column>
+            <column name="referee_id">5</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">4</column>
+            <column name="referee_id">7</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">4</column>
+            <column name="referee_id">6</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">5</column>
+            <column name="referee_id">1</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">5</column>
+            <column name="referee_id">2</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">6</column>
+            <column name="referee_id">4</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">6</column>
+            <column name="referee_id">5</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">7</column>
+            <column name="referee_id">4</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">7</column>
+            <column name="referee_id">5</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">8</column>
+            <column name="referee_id">3</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">8</column>
+            <column name="referee_id">6</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">9</column>
+            <column name="referee_id">3</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">9</column>
+            <column name="referee_id">6</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">10</column>
+            <column name="referee_id">4</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">10</column>
+            <column name="referee_id">5</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">11</column>
+            <column name="referee_id">6</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">11</column>
+            <column name="referee_id">7</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">12</column>
+            <column name="referee_id">1</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">12</column>
+            <column name="referee_id">2</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">13</column>
+            <column name="referee_id">3</column>
+        </insert>
+
+        <insert tableName="match_referee">
+            <column name="match_id">13</column>
+            <column name="referee_id">7</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,46 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="position">
+            <column name="position_id">1</column>
+            <column name="name">golman/vratar</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">2</column>
+            <column name="name">lijevo krilo</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">3</column>
+            <column name="name">lijevi vanjski</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">4</column>
+            <column name="name">srednji vanjski</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">5</column>
+            <column name="name">desni vanjski</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">6</column>
+            <column name="name">desno krilo</column>
+        </insert>
+
+        <insert tableName="position">
+            <column name="position_id">7</column>
+            <column name="name">pivot</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

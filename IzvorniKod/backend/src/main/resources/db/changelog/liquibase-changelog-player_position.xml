@@ -1,0 +1,32 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createTable tableName="player_position">
+            <column name="player_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="position_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="player_position"
+                                 baseColumnNames="player_id"
+                                 constraintName="player_position_player_id_fkey"
+                                 referencedTableName="player"
+                                 referencedColumnNames="player_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="player_position"
+                                 baseColumnNames="position_id"
+                                 constraintName="player_position_position_id_fkey"
+                                 referencedTableName="position"
+                                 referencedColumnNames="position_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+    </changeSet>
+
+</databaseChangeLog>

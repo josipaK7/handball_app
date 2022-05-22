@@ -1,0 +1,32 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createSequence sequenceName="competition_id_seq" incrementBy="1" cycle="false" startValue="1"/>
+
+        <createTable tableName="competition">
+            <column name="competition_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="date_from" type="DATE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="date_to" type="DATE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="image" type="BYTEA">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,54 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createTable tableName="player_match_performance">
+            <column name="match_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="player_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="goals" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="assists" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="suspensions" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="defenses" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="turnovers" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="stolen" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="club_id" type="BIGINT">
+                <constraints foreignKeyName="club_id_player_match_performance_fkey" references="club(club_id)"
+                    deleteCascade="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="player_match_performance"
+                                 baseColumnNames="player_id"
+                                 constraintName="player_match_performance_player_id_fkey"
+                                 referencedTableName="player"
+                                 referencedColumnNames="player_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="player_match_performance"
+                                 baseColumnNames="match_id"
+                                 constraintName="player_match_performance_match_id_fkey"
+                                 referencedTableName="match"
+                                 referencedColumnNames="match_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+    </changeSet>
+
+</databaseChangeLog>

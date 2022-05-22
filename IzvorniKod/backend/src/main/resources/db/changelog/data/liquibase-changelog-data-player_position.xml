@@ -1,0 +1,206 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="player_position">
+            <column name="player_id">100</column>
+            <column name="position_id">2</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">200</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">300</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">400</column>
+            <column name="position_id">7</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">500</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">600</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">700</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">800</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">900</column>
+            <column name="position_id">6</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1000</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1100</column>
+            <column name="position_id">7</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1200</column>
+            <column name="position_id">6</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1300</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1400</column>
+            <column name="position_id">2</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1500</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1600</column>
+            <column name="position_id">2</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1700</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1800</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">1900</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2000</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2100</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2200</column>
+            <column name="position_id">6</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2300</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2400</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2500</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2600</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2700</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2800</column>
+            <column name="position_id">2</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">2900</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3000</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3100</column>
+            <column name="position_id">2</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3200</column>
+            <column name="position_id">7</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3300</column>
+            <column name="position_id">1</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3400</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3500</column>
+            <column name="position_id">4</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3600</column>
+            <column name="position_id">5</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3700</column>
+            <column name="position_id">3</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3800</column>
+            <column name="position_id">7</column>
+        </insert>
+
+        <insert tableName="player_position">
+            <column name="player_id">3900</column>
+            <column name="position_id">6</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

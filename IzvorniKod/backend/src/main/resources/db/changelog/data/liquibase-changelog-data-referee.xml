@@ -1,0 +1,67 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <insert tableName="referee">
+            <column name="referee_id">1</column>
+            <column name="first_name">Boris</column>
+            <column name="last_name">Milošević</column>
+            <column name="origin_country">Hrvatska</column>
+            <column name="active_from_date">2001-01-09</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">2</column>
+            <column name="first_name">Matija</column>
+            <column name="last_name">Gubica</column>
+            <column name="origin_country">Hrvatska</column>
+            <column name="active_from_date">2004-09-15</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">3</column>
+            <column name="first_name">Mads</column>
+            <column name="last_name">Hansen</column>
+            <column name="origin_country">Danska</column>
+            <column name="active_from_date">2010-01-01</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">4</column>
+            <column name="first_name">Charlotte</column>
+            <column name="last_name">Bonaventura</column>
+            <column name="origin_country">Španjolska</column>
+            <column name="active_from_date">2012-05-15</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">5</column>
+            <column name="first_name">Julie</column>
+            <column name="last_name">Bonaventura</column>
+            <column name="origin_country">Španjolska</column>
+            <column name="active_from_date">2012-03-27</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">6</column>
+            <column name="first_name">Marcus</column>
+            <column name="last_name">Helbig</column>
+            <column name="origin_country">Njemačka</column>
+            <column name="active_from_date">2008-03-01</column>
+        </insert>
+
+        <insert tableName="referee">
+            <column name="referee_id">7</column>
+            <column name="first_name">Ricardo</column>
+            <column name="last_name">Fonseca</column>
+            <column name="origin_country">Portugal</column>
+            <column name="active_from_date">2011-10-20</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

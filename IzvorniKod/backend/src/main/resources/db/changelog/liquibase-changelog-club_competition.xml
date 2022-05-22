@@ -1,0 +1,34 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+
+        <createTable tableName="club_competition">
+            <column name="competition_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="club_id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="club_competition"
+                                 baseColumnNames="competition_id"
+                                 constraintName="club_competition_competition_id_fkey"
+                                 referencedTableName="competition"
+                                 referencedColumnNames="competition_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="club_competition"
+                                 baseColumnNames="club_id"
+                                 constraintName="club_competition_club_id_fkey"
+                                 referencedTableName="club"
+                                 referencedColumnNames="club_id"
+                                 onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+
+    </changeSet>
+
+</databaseChangeLog>

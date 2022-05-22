@@ -1,0 +1,39 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202107" author="josipak">
+        <createSequence sequenceName="match_id_seq" incrementBy="1" cycle="false" startValue="100"/>
+
+        <createTable tableName="match">
+            <column name="match_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="club_one_id" type="BIGINT">
+                <constraints foreignKeyName="club_one_id_match_fkey" references="club(club_id)"
+                             deleteCascade="true"/>
+            </column>
+            <column name="club_two_id" type="BIGINT">
+                <constraints foreignKeyName="club_two_id_match_fkey" references="club(club_id)"
+                             deleteCascade="true"/>
+            </column>
+            <column name="competition_id" type="BIGINT">
+                <constraints foreignKeyName="competition_id_match_fkey" references="competition(competition_id)"
+                             deleteCascade="true"/>
+            </column>
+            <column name="club_one_goals" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="club_two_goals" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_played" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
